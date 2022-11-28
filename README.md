@@ -1,3 +1,3 @@
 # GALab8
 GitHub Actions - przegląd podstawowych rozwiązań
-v.1w
+v.1ww
