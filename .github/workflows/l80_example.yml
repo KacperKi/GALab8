@@ -24,8 +24,8 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v2
         with:
-          username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+          username: ${{ secrets.USER_NAME }}
+          password: ${{ secrets.USER_TOKEN }}
 
       - name: Cache Docker layers
         uses: actions/cache@v2
@@ -39,7 +39,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: spg51/lab:lab8
+          images: kacperxawer/lab:lab8
 
       - name: Build and push Docker image
         id: docker_build
